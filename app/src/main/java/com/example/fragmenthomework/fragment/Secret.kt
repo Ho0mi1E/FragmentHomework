@@ -18,7 +18,6 @@ class Secret : Fragment(R.layout.show_user_secret) {
         }
 
 
-
     }
 
     private val user: User? by lazy { arguments?.getParcelable(key) }
@@ -30,6 +29,4 @@ class Secret : Fragment(R.layout.show_user_secret) {
     }
 
 
-
-
-    }
+}

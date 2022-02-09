@@ -1,7 +1,6 @@
 package com.example.fragmenthomework.fragment
 
 
-
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
@@ -12,7 +11,6 @@ import com.example.fragmenthomework.user.User
 import kotlinx.android.synthetic.main.login.*
 
 
-
 class Login : Fragment(R.layout.login) {
     companion object {
         const val TAG = "LOGIN"
@@ -21,23 +19,30 @@ class Login : Fragment(R.layout.login) {
 
     }
 
-    private fun putData(){
+    private fun putData() {
         btn.setOnClickListener {
             if (name.text.isEmpty() || email.text.isEmpty() || password.text.isEmpty())
                 requireActivity().showToast("кек")
             else {
 
-        val user = User(name.text.toString(), email.text.toString(), password.text.toString())
-                requireActivity().openFragment(JustName.newInstance(user), R.id.container, JustName.TAG)
-            }}}
+                val user =
+                    User(name.text.toString(), email.text.toString(), password.text.toString())
+                requireActivity().openFragment(
+                    JustName.newInstance(user),
+                    R.id.container,
+                    JustName.TAG
+                )
+            }
+        }
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         putData()
-           }
+    }
 
 
-        }
+}
 
 
 
