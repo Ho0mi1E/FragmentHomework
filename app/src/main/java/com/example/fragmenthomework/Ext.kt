@@ -14,7 +14,7 @@ fun Activity.showToast(message: String){
 fun FragmentActivity.openFragment(fragment: Fragment, id: Int,tag:String){
     supportFragmentManager
         .beginTransaction()
-        .add(id, fragment, tag)
+        .replace(id, fragment, tag)
         .addToBackStack(tag)
         .commit()
 }
