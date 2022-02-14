@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">FragmentHomework</string>
-    <string name="btn_name">Продолжить</string>
-    <string name="text_name">Имя:</string>
+    <string name="btn_name">Next</string>
+    <string name="text_name">Name:</string>
     <string name="email">Email:</string>
-    <string name="password">Пароль:</string>
-    <string name="mask">Сломай мне маску</string>
+    <string name="password">Password:</string>
+    <string name="mask">Break my mask</string>
+    <string name="toast">Lol</string>
 </resources>

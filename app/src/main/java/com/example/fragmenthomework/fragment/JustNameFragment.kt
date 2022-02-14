@@ -8,11 +8,11 @@ import com.example.fragmenthomework.openFragment
 import com.example.fragmenthomework.user.User
 import kotlinx.android.synthetic.main.user.*
 
-class JustName : Fragment(R.layout.user) {
+class JustNameFragment : Fragment(R.layout.user) {
     companion object {
         const val TAG = "USERNAME"
         const val USER_KEY = "tobi"
-        fun newInstance(user: User) = JustName().apply {
+        fun newInstance(user: User) = JustNameFragment().apply {
             arguments = Bundle().apply { putParcelable(USER_KEY, user) }
         }
 
@@ -22,7 +22,7 @@ class JustName : Fragment(R.layout.user) {
     private fun showYourSecret() {
 
         imagine.setOnClickListener {
-            requireActivity().openFragment(Secret.newInstance(user), R.id.container, Secret.TAG)
+            requireActivity().openFragment(SecretFragment.newInstance(user), R.id.container, SecretFragment.TAG)
 
         }
     }

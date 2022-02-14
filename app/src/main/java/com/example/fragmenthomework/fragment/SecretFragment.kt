@@ -8,12 +8,12 @@ import com.example.fragmenthomework.user.User
 import kotlinx.android.synthetic.main.show_user_secret.*
 
 
-class Secret : Fragment(R.layout.show_user_secret) {
+class SecretFragment : Fragment(R.layout.show_user_secret) {
     companion object {
         const val TAG = "SECRET"
         val key = "Key"
 
-        fun newInstance(user: User?) = Secret().apply {
+        fun newInstance(user: User?) = SecretFragment().apply {
             arguments = Bundle().apply { putParcelable(key, user) }
         }
 

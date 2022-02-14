@@ -11,12 +11,18 @@
         android:hint="@string/text_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
     <EditText
         android:id="@+id/email"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_margin="64dp"
+        android:backgroundTint="#FFEB3B"
+        android:backgroundTintMode="src_over"
+        android:fontFamily="serif-monospace"
+        android:foregroundTint="#E91E63"
         android:hint="@string/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,5 +48,6 @@
         android:text="@string/btn_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

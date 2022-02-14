@@ -11,10 +11,10 @@ import com.example.fragmenthomework.user.User
 import kotlinx.android.synthetic.main.login.*
 
 
-class Login : Fragment(R.layout.login) {
+class LoginFragment : Fragment(R.layout.login) {
     companion object {
         const val TAG = "LOGIN"
-        fun newInstance() = Login()
+        fun newInstance() = LoginFragment()
 
 
     }
@@ -28,9 +28,9 @@ class Login : Fragment(R.layout.login) {
                 val user =
                     User(name.text.toString(), email.text.toString(), password.text.toString())
                 requireActivity().openFragment(
-                    JustName.newInstance(user),
+                    JustNameFragment.newInstance(user),
                     R.id.container,
-                    JustName.TAG
+                    JustNameFragment.TAG
                 )
             }
         }
